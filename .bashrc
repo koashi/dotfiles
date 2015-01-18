@@ -6,3 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
+# Alias
+alias ls='ls -G'
+alias ll='ls -lG'
+alias la='ls -laG'
