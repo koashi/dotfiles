@@ -1,3 +1,5 @@
 [user]
 	name = koashi
 	email = koashi@users.noreply.github.com
+[color]
+	ui = true
