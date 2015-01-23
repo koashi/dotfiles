@@ -3,3 +3,8 @@
 	email = koashi@users.noreply.github.com
 [color]
 	ui = true
+[alias]
+	br = branch
+	co = checkout
+	ci = commit
+	st = status
