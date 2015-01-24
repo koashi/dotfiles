@@ -37,6 +37,7 @@ NeoBundle 'Shougo/vimproc.vim', {
             \     'unix' : 'gmake',
             \    },
             \ }
+NeoBundle 'Shougo/unite.vim'
 
 call neobundle#end()
 
