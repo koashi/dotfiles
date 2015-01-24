@@ -1,8 +1,9 @@
 " .vimrc
 
+""" Character encoding
+set encoding=utf-8
 
-" NeoBundle (is a Vim plugin manager.)
-
+""" NeoBundle (is a Vim plugin manager.)
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
 
@@ -37,14 +38,42 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-
-" Options
-
+""" Options
+" Syntax
 syntax enable
 
-" colorscheme
+" Colorscheme
 set t_Co=256
 colorscheme molokai
 
+" Backspace
 set backspace=indent,eol,start
+
+" Undo
 set undofile
+
+" Row number
+set number
+
+" Status line
+set laststatus=2
+set showmode
+set showcmd
+set cmdheight=2
+
+" Decimal number
+set nrformats=
+
+" Search
+set incsearch
+set hlsearch
+
+" Indent
+set tabstop=4
+set autoindent
+set expandtab
+set shiftwidth=4
+
+" Listchars
+set list
+set listchars=tab:▸\ ,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
