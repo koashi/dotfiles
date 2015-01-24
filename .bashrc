@@ -21,6 +21,14 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # Alias
-alias ls='ls -G'
-alias ll='ls -lG'
-alias la='ls -laG'
+# ls
+if [ $(uname) = "Darwin" ]; then
+    # Mac
+    alias ls='ls -G'
+    alias ll='ls -lG'
+    alias la='ls -laG'
+else
+    alias ls='ls --color'
+    alias ll='ls -l --color'
+    alias la='ls -la --color'
+fi
