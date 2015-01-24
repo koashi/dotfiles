@@ -8,3 +8,7 @@
 	co = checkout
 	ci = commit
 	st = status
+[diff]
+	external = git_diff_wrapper
+[pager]
+	diff =

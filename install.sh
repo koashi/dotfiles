@@ -2,6 +2,14 @@
 
 # install.sh
 
+# Make bin dir
+if [ ! -d ~/bin ]; then
+    mkdir -p ~/bin
+fi
+
+# Symbolic link
+ln -s ~/git/dotfiles/bin/git_diff_wrapper ~/bin
+
 if [ -x $(which curl) ]; then
     # Get git-prompt
     curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
