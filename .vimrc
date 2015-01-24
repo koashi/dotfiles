@@ -26,6 +26,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'vim-jp/vimdoc-ja'
+NeoBundle 'tomasr/molokai'
 
 call neobundle#end()
 
@@ -38,6 +39,12 @@ NeoBundleCheck
 
 
 " Options
+
+syntax enable
+
+" colorscheme
+set t_Co=256
+colorscheme molokai
 
 set backspace=indent,eol,start
 set undofile
