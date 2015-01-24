@@ -5,6 +5,7 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+# User specific aliases and functions
 # PS1
 if [ -f ~/.git-prompt.sh ]; then
     # Add git repository status
@@ -14,7 +15,11 @@ else
     PS1='\[\033[36m\][\u@\H:\w]\[\033[0m\]\n\[\033[36m\]\$\[\033[0m\] '
 fi
 
-# User specific aliases and functions
+# Add git completion
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 # Alias
 alias ls='ls -G'
 alias ll='ls -lG'
