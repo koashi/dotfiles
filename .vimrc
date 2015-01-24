@@ -39,6 +39,9 @@ NeoBundle 'Shougo/vimproc.vim', {
             \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'Shougo/neocomplete.vim'
+" neocomplete
+let g:neocomplete#enable_at_startup = 1
 
 call neobundle#end()
 
